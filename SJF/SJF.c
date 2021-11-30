@@ -3,7 +3,7 @@
 #define MAX 10
 
 
-// Test Cases
+// Test Case
 int mat[MAX][6] = { {1,2,3,-1,-1,-1},
                     {2,0,4,-1,-1,-1},
                     {3,4,2,-1,-1,-1},
@@ -73,7 +73,23 @@ void displayInput(int num){
 
 }
 
-void solveSJF(int num){
+void solveSJF(){
+
+	int num = 4;
+
+	// Input table
+	printf("Enter number of Process: \n");
+	scanf("%d",&num);
+
+	for (int i = 0; i < num; i++) {
+		printf("...Process %d ...\n",i + 1);
+		mat[i][0] = i+1; // process id
+		printf("Enter Arrival Time: ");
+		scanf("%d",&mat[i][1]);
+		printf("Enter Burst Time: ");
+		scanf("%d",&mat[i][2]);
+	}
+
 	displayInput(num);
 	arrangeArrival(num);
 	completionTime(num);
@@ -86,12 +102,8 @@ void solveSJF(int num){
     AverageTimes(num);
 }
 
-int main(){
-	int num, temp;
-    num=4;
-	solveSJF(num);
-
-    
-
-	
-}
+// int main(){
+// 	int num;
+//     num=4;
+// 	solveSJF(num);
+// }
