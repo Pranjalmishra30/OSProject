@@ -1,10 +1,10 @@
 #include<stdio.h>
 #include<stdlib.h>
 #include<unistd.h>
-#include "SJF.c"
-#include "fcfs.c"
-#include "priorityScheduling.c"
-#include "RR.c"
+#include "Algorithms/SJF.c"
+#include "Algorithms/fcfs.c"
+#include "Algorithms/priorityScheduling.c"
+#include "Algorithms/RR.c"
 
 
 int main(){

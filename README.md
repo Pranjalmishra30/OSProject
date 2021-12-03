@@ -1,6 +1,12 @@
 # Comparitive study of OS scheduling algorithms  
 
-# Abstract  
+## Team  
+* Pranjal Mishra  
+* Parikalp Singh  
+* Sudarshan Sivakumar  
+* V Manushree
+
+## Abstract  
 Scheduling is a fundamental part of any operating system. Almost all computer resources are scheduled before they are used. The CPU is one of the primary computer resources. As a result, CPU scheduling is crucial in operating-system design.  
 
 CPU scheduling is the process of determining which processes will run on the CPU. The main goal of process scheduling is to prevent the CPU from becoming idle. A typical process demands both I/O and CPU time. The selection process will be carried out by the CPU scheduler. It selects one of the processes in memory that are ready for execution. It ensures that one process can utilize the CPU while another waits for I/O.   
