@@ -2,13 +2,7 @@
 #include<stdlib.h>
 #define MAX 10
 
-
-// Test Case
-int mat[MAX][6] = { {1,2,3,-1,-1,-1},
-                    {2,0,4,-1,-1,-1},
-                    {3,4,2,-1,-1,-1},
-                    {4,5,4,-1,-1,-1} };
-
+int mat[MAX][6];
 
 void swap(int* a, int* b){
 	int temp = *a;
@@ -75,9 +69,7 @@ void displayInput(int num){
 
 void solveSJF(){
 
-	int num = 4;
-
-	// Input table
+	int num;
 	printf("Enter number of Process: \n");
 	scanf("%d",&num);
 
@@ -97,13 +89,11 @@ void solveSJF(){
 	printf("PID\tArrival Time\tBurst Time\tCompletion Time\t\tWaiting "
 			"Time\tTurnaround Time\n");
 	for(int i = 0; i < num; i++){
-		printf("%d\t\t%d\t\t%d\t\t%d\t\t%d\t\t%d\n",mat[i][0],mat[i][1],mat[i][2],mat[i][3],mat[i][4],mat[i][5]);
+		printf("%d\t%d\t\t%d\t\t%d\t\t\t%d\t\t%d\n",mat[i][0],mat[i][1],mat[i][2],mat[i][3],mat[i][4],mat[i][5]);
 	}
     AverageTimes(num);
 }
 
 // int main(){
-// 	int num;
-//     num=4;
-// 	solveSJF(num);
+// 	solveSJF();
 // }

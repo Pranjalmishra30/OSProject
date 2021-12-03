@@ -1,8 +1,10 @@
 #include<stdio.h>
 #include<stdlib.h>
 #include<unistd.h>
-#include "SJF/SJF.c"
-#include "FCFS/fcfs.c"
+#include "SJF.c"
+#include "fcfs.c"
+#include "priorityScheduling.c"
+#include "RR.c"
 
 
 int main(){
@@ -15,6 +17,7 @@ int main(){
         printf("1. FCFS\n");
         printf("2. SJF\n");
         printf("3. Round Robin\n");
+        printf("4. Priority Scheduling\n");
         printf("Choose option: ");
         scanf("%d",&n);
 
@@ -31,7 +34,14 @@ int main(){
 
             case 3:
                 printf("\nExecuting Round Robin\n");
-                // execlp("","",NULL) // complete when file is ready
+                solveRR();
+                break;
+
+            case 4:
+                printf("\nExecuting Priority Scheduling\n");
+                solvePri();
+                break;
+            
 
             case -1:
                 printf("Exiting...\n");
